@@ -1,7 +1,5 @@
 <?php
-
-echo __DIR__;
-// require_once 'configuration\connect.php';
+require_once __DIR__.'configuration\connect.php';
 
 
 $method = $_SERVER['REQUEST_METHOD'];

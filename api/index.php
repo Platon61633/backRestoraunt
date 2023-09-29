@@ -65,40 +65,40 @@ switch ($_GET['for']) {
         switch ($_GET['type']) {
             case 'kitchen':
                 $kitchen = [
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ЗАКУСКИ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ОСНОВНОЕ БЛЮДО'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'САЛАТЫ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'СУПЫ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ДЕСЕРТ'"))                
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ЗАКУСКИ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ОСНОВНОЕ БЛЮДО'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'САЛАТЫ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'СУПЫ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ДЕСЕРТ'"))                
                 ];
                 break;
             case 'breakfast':
                 $kitchen = [
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'БАНКЕТНОЕ МЕНЮ'"))  
-                    // mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'СЛАДКОЕ'")),
-                    // mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'НЕ СЛАДКОЕ'"))               
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'БАНКЕТНОЕ МЕНЮ'"))  
+                    // mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'СЛАДКОЕ'")),
+                    // mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'НЕ СЛАДКОЕ'"))               
                 ];
                 break;
             case 'bar':
                 $kitchen = [
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'КОФЕ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ЧАЙ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ВИНО'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ВИНО ИГРИСТОЕ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'КОКТЕЙЛИ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ПИВО'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ВОДКА'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'КОНЬЯК'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ВИСКИ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'БРЭНДИ'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'ДЖИН'")),
-                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = 'РОМ'")),          
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'КОФЕ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ЧАЙ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ВИНО'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ВИНО ИГРИСТОЕ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'КОКТЕЙЛИ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ПИВО'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ВОДКА'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'КОНЬЯК'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ВИСКИ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'БРЭНДИ'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'ДЖИН'")),
+                    mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = 'РОМ'")),          
                 ];
                 break;
             
             default:
-            $kitchen =  mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `sql11647498`.`type_kitchen` WHERE `type` = '".$_GET['type']."'"));
+            $kitchen =  mysqli_fetch_all(mysqli_query($connect, "SELECT * FROM `restoraunt`.`type_kitchen` WHERE `type` = '".$_GET['type']."'"));
                 break;
         }
         

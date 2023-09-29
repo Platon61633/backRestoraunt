@@ -12,7 +12,7 @@ if ($connect) {
 
 switch ($_GET['for']) {
     case 'event':
-
+        echo 'yeee';
         $event = mysqli_fetch_all(mysqli_query($connect, 'SELECT * FROM `event`'));
 
         switch ($method) {

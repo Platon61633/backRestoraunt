@@ -4,15 +4,14 @@ require_once __DIR__.'/configuration/connect.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-if ($connect) {
-    echo 'gg';
-}else {
-    echo 'badg';
-}
+// if ($connect) {
+//     echo 'gg';
+// }else {
+//     echo 'badg';
+// }
 
 switch ($_GET['for']) {
     case 'event':
-        echo 'yeee';
         $event = mysqli_fetch_all(mysqli_query($connect, 'SELECT * FROM `event`'));
 
         switch ($method) {

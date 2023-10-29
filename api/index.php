@@ -158,21 +158,7 @@ switch ($_GET['for']) {
             }
             break;
         case 'img':
-            echo '';
+            echo '<img src="./img/card_of_wine.jpg" alt="m">';
             break;
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <img src="./img/card_of_wine.jpg" alt="
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a aliquid facilis sed cumque omnis iure eaque obcaecati, ullam quia repellendus libero suscipit ea dicta molestiae neque sunt necessitatibus quibusdam?
-    ">
-</body>
-</html>

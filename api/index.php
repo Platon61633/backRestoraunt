@@ -158,7 +158,7 @@ switch ($_GET['for']) {
             }
             break;
         case 'img':
-            echo '<img src="https://klike.net/uploads/posts/2019-11/1574605225_22.jpg" alt="
+            echo '<img src="./img/card_of_wine.jpg" alt="
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a aliquid facilis sed cumque omnis iure eaque obcaecati, ullam quia repellendus libero suscipit ea dicta molestiae neque sunt necessitatibus quibusdam?
             ">';
             break;

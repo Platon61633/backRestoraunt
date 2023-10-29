@@ -158,7 +158,7 @@ switch ($_GET['for']) {
             }
             break;
         case 'img':
-            echo '<img src="./img/card_of_wine.jpg" alt="m">';
+            echo '<img src="/img/card_of_wine.jpg" alt="m1">';
             break;
 }
 ?>

@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/img/card_of_wine.jpg": {
+      "api/img/franch.webp": {
         "runtime": "vercel-php@0.5.3"
       }
     }

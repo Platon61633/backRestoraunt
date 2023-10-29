@@ -158,17 +158,7 @@ switch ($_GET['for']) {
             }
             break;
         case 'img':
-            echo '<!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Document</title>
-            </head>
-            <body>
-                <button>fgfgf</button>
-            </body>
-            </html>';
+            echo '<button>fgfgf</button>';
             break;
 }
 ?>

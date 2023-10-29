@@ -155,6 +155,10 @@ switch ($_GET['for']) {
                         echo 1;
                     }
                     break;
-                }
+            }
+            break;
+        case 'img':
+            echo `<button>ggoo</button>`
+            break;
 }
 ?>

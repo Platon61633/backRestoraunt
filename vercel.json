@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/img/franch.webp": {
+      "api/*.php": {
         "runtime": "vercel-php@0.5.3"
       }
     }

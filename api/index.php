@@ -158,7 +158,13 @@ switch ($_GET['for']) {
             }
             break;
         case 'reserved':
+
+            $reserved = mysqli_fetch_all(mysqli_query($connect, 'SELECT * FROM `reserved`'));
+
             switch ($method) {
+                case 'GET':
+                    echo json_encode($reserved);
+                    break;
                 case 'POST':
                     $arr = json_decode(file_get_contents('php://input'));
                     if (!mysqli_query($connect, "INSERT INTO `reserved` (`id`, `name`, `surname`, `date`, `time`, `tel`, `kolvo`, `info`) 

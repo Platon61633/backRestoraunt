@@ -157,8 +157,5 @@ switch ($_GET['for']) {
                     break;
             }
             break;
-        case 'img':
-            echo '<img src="./img/franch.webp" alt="m1">';
-            break;
 }
 ?>
